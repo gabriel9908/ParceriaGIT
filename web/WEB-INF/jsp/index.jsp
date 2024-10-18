@@ -1,19 +1,74 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Sistema CRM</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        main {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
-    </head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Sistema CRM</h1>
+        <p>Gerencie suas interações com clientes de forma eficiente.</p>
+    </header>
 
-    <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
-        <p><i>To display a different welcome page for this project, modify</i>
-            <tt>index.jsp</tt> <i>, or create your own welcome page then change
-                the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
-                welcome page and also update the welcome-file setting in</i>
-            <tt>web.xml</tt>.</p>
-    </body>
+    <nav>
+        <a href="clientes.jsp">Clientes</a>
+        <a href="oportunidades.jsp">Oportunidades</a>
+        <a href="relatorios.jsp">Relatórios</a>
+        <a href="configuracoes.jsp">Configurações</a>
+    </nav>
+
+    <main>
+        <h2>Visão Geral</h2>
+        <p>Com o nosso sistema CRM, você pode:</p>
+        <ul>
+            <li>Gerenciar informações de clientes e contatos.</li>
+            <li>Acompanhar oportunidades de vendas e negócios.</li>
+            <li>Gerar relatórios detalhados sobre o desempenho da equipe.</li>
+            <li>Personalizar suas configurações para atender suas necessidades específicas.</li>
+        </ul>
+        <p><strong>Comece a explorar agora mesmo!</strong></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema CRM. Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
